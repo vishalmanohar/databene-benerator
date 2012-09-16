@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<setup	xmlns="http://databene.org/benerator/0.7.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://databene.org/benerator/0.7.0 http://databene.org/benerator-0.7.0.xsd">
+		
+	<import platforms="xml"/>
+	
+	<include uri="demo/shop/shop-plain.xsd" />
+	
+	<bean id="cons" spec="new XMLEntityExporter('test.xml')" />
+	
+	<generate type="shop" count="1" consumer="cons">
+		<generate type="product" count="5" consumer="cons" />
+	</generate>
+	
+</setup>

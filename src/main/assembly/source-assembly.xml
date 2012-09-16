@@ -1,0 +1,23 @@
+<assembly>
+    <id>sources</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <!-- license files -->
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <outputDirectory>/</outputDirectory>
+            <includes>
+                <include>license.txt</include>
+                <include>gpl.txt</include>
+            </includes>
+        </fileSet>
+        <!-- source files -->
+        <fileSet>
+            <directory>src/main/java</directory>
+            <outputDirectory></outputDirectory>
+        </fileSet>
+    </fileSets>
+</assembly>

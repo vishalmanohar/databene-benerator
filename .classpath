@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/demo/java"/>
+	<classpathentry excluding="**/*.java" including="**/*" kind="src" path="src/test/resources"/>
+	<classpathentry including="**/*.java" kind="src" path="src/main/java"/>
+	<classpathentry excluding="dataset.dtd|log4j.xml" including="**/*.csv|**/*.dtd|**/*.gif|**/*.properties|**/*.sql|**/*.txt|**/*.xls|**/*.xml|**/*.xsd" kind="src" path="src/main/resources"/>
+	<classpathentry excluding="**/*.java" including="**/*" kind="src" path="src/demo/resources"/>
+	<classpathentry kind="src" path="src/generated/java"/>
+	<classpathentry kind="var" path="M2_REPO/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar"/>
+	<classpathentry kind="var" path="M2_REPO/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.1/commons-logging-1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/derby/derbyclient/10.4.2.0/derbyclient-10.4.2.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/easymock/easymock/2.0/easymock-2.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/freemarker/freemarker/2.3.9/freemarker-2.3.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sourceforge/jtds/jtds/1.2.2/jtds-1.2.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/4.7/junit-4.7.jar"/>
+	<classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14.jar"/>
+	<classpathentry kind="var" path="M2_REPO/logkit/logkit/1.0.1/logkit-1.0.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/poi/poi/3.5-beta6/poi-3.5-beta6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/postgresql/postgresql/8.3-603.jdbc4/postgresql-8.3-603.jdbc4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-log4j12/1.5.8/slf4j-log4j12-1.5.8.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/commons"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/webdecs"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="M2_REPO/org/antlr/antlr-runtime/3.2/antlr-runtime-3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/h2database/h2/1.2.132/h2-1.2.132.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sf/squirrel-sql/thirdparty-non-maven/jaybird/2.1.6/jaybird-2.1.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/oracle/ojdbc/11.2.0.2.0/ojdbc6-11.2.0.2.0.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jdbacl"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/contiperf"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/databene-script"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<conqat xmlns="http://conqat.cs.tum.edu/ns/config">
+
+  <!-- Parameters -->
+  <property name="input.dir" value="/Users/volker/Documents/databene/benerator" />
+  <property name="output.dir" value="target/conqat" />
+  <property name="output.reportname" value="clone_report.xml" />
+  <property name="clone.minlength" value="10" />
+  <property name="architecture.file" value="architecture.benerator.xml" />
+ 
+  <!-- Load JUnit source code -->
+  <processor name="src" class="edu.tum.cs.conqat.sourcecode.scope.SourceCodeScope">
+    <include pattern="**/*.java" />
+    <language name="JAVA" />
+    <root dir="${input.dir}" />
+  </processor>
+
+  <!-- Compute lines of code -->
+  <processor name="loc-analyzer" class="edu.tum.cs.conqat.filesystem.analysis.LOCAnalyzer">
+    <input ref="@src" />
+  </processor>
+  <processor name="loc-aggregator" class="edu.tum.cs.conqat.commons.aggregation.SumAggregator">
+    <read key="LoC" />
+    <input ref="@loc-analyzer" />
+  </processor>
+
+  <!-- Compute Comment Ratio -->
+  <processor name="cr-analyzer" class="edu.tum.cs.conqat.sourcecode.analysis.CommentRatioAnalyzer">
+    <input ref="@loc-aggregator" />
+  </processor>
+
+  <!-- Assess and aggregate Comment Ratio -->
+  <processor name="cr-assessor" class="edu.tum.cs.conqat.commons.assessment.DoubleAssessor">
+    <range lower="0" upper="0.2" color="RED" />
+    <range lower="0.2" upper="0.4" color="YELLOW" />
+    <range lower="0.4" upper="1" color="GREEN" />
+    <read key="CR" />
+    <write key="CR-Assessment" />
+    <input ref="@cr-analyzer" />
+  </processor>
+  <processor name="cr-aggregator" class="edu.tum.cs.conqat.commons.assessment.AssessmentAggregator">
+    <read key="CR-Assessment" />
+    <input ref="@cr-assessor" />
+  </processor>
+
+  <!-- Colorize nodes according to assessment -->
+  <processor name="cr-colorizer" class="edu.tum.cs.conqat.html_presentation.color.AssessmentColorizer">
+    <read key="CR-Assessment" />
+    <input ref="@cr-aggregator" />
+  </processor>
+
+  <!-- Create Treemap -->
+  <processor name="cr-treemap" class="edu.tum.cs.conqat.html_presentation.treemap.TreeMapLayouter">
+    <input ref="@cr-colorizer" />
+    <cushion height="0.5" scale="0.8" />
+    <size key="LoC" />
+    <dimensions width="800" height="600" />
+    <frames color="#FFFFFF" />
+    <output dir="${output.dir}" />
+    <info name="LOC" description="Lines of Code" />
+  </processor>
+
+  <!-- Write result into report: Create table layout -->
+  <processor name="loc-table" class="edu.tum.cs.conqat.html_presentation.layouters.TableLayouter">
+    <input ref="@cr-aggregator" />
+    <info name="LOC" description="Lines of Code" />
+  </processor>
+
+  <!-- CLONE DETECTION  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  
+  <!-- Perform clone detection -->
+  <!-- TODO v1.0 find out what wrong here and fix it
+  <block name="clonedetection" spec="edu.tum.cs.conqat.blocklib.JavaCloneChain">
+    <input scope="@src" />
+    <clone minlength="${clone.minlength}" />
+    <output dir="${output.dir}" reportname="${output.reportname}" />
+    <info groupId="Clone Detection" />
+  </block>
+  -->
+  
+  <!-- ARCHITECTURE - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  
+  <processor name="benerator" class="edu.tum.cs.conqat.java.scope.JavaScope">
+    <source dir="${input.dir}/src/main/java" />
+    <byte-code dir="${input.dir}/target/classes" />
+  </processor>
+
+  <!-- Determine dependencies between classes -->
+  <processor name="ignore-patterns" class="edu.tum.cs.conqat.commons.pattern.PatternListDef">
+    <pattern regex="java.*" />
+  </processor>
+  <processor name="dependencies" class="edu.tum.cs.conqat.java.listbuilder.ImportListBuilder">
+    <ignore-list ref="@ignore-patterns" />
+    <input ref="@benerator" />
+  </processor>
+ 
+  <!-- Tolerated dependencies -->
+  <processor name="tolerations" class="edu.tum.cs.conqat.architecture.toleration.TolerationsDef">
+    <tolerated dependencies="#CONTENT">
+    junit.samples.AllTests -> junit.tests.AllTests
+    </tolerated>
+  </processor>
+
+  <!-- Perform architecture analysis -->
+  <block name="architectureanalysis" spec="edu.tum.cs.conqat.blocklib.ArchitectureAnalysis">
+    <input architecture="${architecture.file}" dependencies-list="@dependencies" dependencies-key="Dependency List" logging-ignore-patterns="@ignore-patterns"
+      tolerated-dependencies="@tolerations" />
+    <output groupId="Architecture Analysis" dir="${output.dir}" />
+  </block>
+
+
+  <!-- PRESENTATION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  
+  <!-- Write result into report: Create html pages -->
+  <processor name="presentation" class="edu.tum.cs.conqat.html_presentation.HTMLPresentation">
+    <result ref="@architectureanalysis.html*" />
+    <result ref="@loc-table" />
+    <result ref="@cr-treemap" />
+    <!-- result ref="@clonedetection.*" />-->
+    <output dir="${output.dir}" />
+    <project title="benerator" />
+  </processor>
+  
+</conqat>

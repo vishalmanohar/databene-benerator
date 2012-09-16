@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<setup xmlns="http://databene.org/benerator/0.7.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://databene.org/benerator/0.7.0 http://databene.org/benerator-0.7.0.xsd">
+
+	<iterate type="TX" source="tx.ent.csv" 
+			consumer="org.databene.model.consumer.ConsoleExporter">
+		<id name="ID" type="long" generator="new IncrementGenerator(1000)" />
+		<attribute name="CARD"
+			script="{[#ftl][#if TX.CARD='Y']1[#else]0[/#if]}" />
+		<attribute name="PRODUCT" script="{${TX.PRODUCT}}"
+			converter="org.databene.commons.converter.CaseConverter" />
+	</iterate>
+	
+</setup>

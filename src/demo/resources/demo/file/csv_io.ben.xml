@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<setup	xmlns="http://databene.org/benerator/0.7.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://databene.org/benerator/0.7.0 http://databene.org/benerator-0.7.0.xsd">
+
+    <!-- read comma-sparated csv and output to semicolon separated csv -->
+    <iterate type="db_product" source="demo/file/products.import.csv" encoding="ISO-8859-1">
+        <consumer class="org.databene.platform.csv.CSVEntityExporter">
+            <property name="uri"       value="p1.csv"/>
+            <property name="columns"   value="ean_code,name"/>
+            <property name="separator" value=";"/>
+        </consumer>
+    </iterate>
+
+    <!-- read pipe-sparated csv and output to comma separated csv -->
+    <bean id="csv_semicolon_reader" class="org.databene.platform.csv.CSVEntitySource">
+        <property name="entityName" value="db_product"/>
+        <property name="uri"        value="demo/file/products.pipe.csv"/>
+        <property name="separator"  value="|"/>
+        <property name="encoding"   value="ISO-8859-1"/>
+    </bean>
+
+    <iterate type="db_product" source="csv_semicolon_reader">
+        <consumer class="org.databene.platform.csv.CSVEntityExporter">
+            <property name="uri"      value="p2.csv"/>
+            <property name="encoding" value="UTF-8"/>
+            <property name="columns"  value="ean_code,name"/>
+        </consumer>
+    </iterate>
+
+</setup>

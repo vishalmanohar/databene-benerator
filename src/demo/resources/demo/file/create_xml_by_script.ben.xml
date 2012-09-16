@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<setup	xmlns="http://databene.org/benerator/0.7.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://databene.org/benerator/0.7.0 http://databene.org/benerator-0.7.0.xsd">
+	
+    <generate type="transaction" count="10">
+        <variable name="product" type="entity" source="demo/file/products.import.csv" distribution="random"/>
+        <attribute name="id" type="long" />
+        <attribute name="ean_code" script="product.ean_code"/>
+        <attribute name="price" script="product.price"/>
+        <attribute name="items" type="short" min="1" max="27"/>
+        <consumer class="org.databene.platform.script.ScriptedEntityExporter">
+            <property name="uri" value="transactions.xml"/>
+            <property name="headerScript" value="demo/file/transaction_xml_header.ftl"/>
+            <property name="partScript" value="demo/file/transaction_xml_part.ftl"/>
+            <property name="footerScript" value="demo/file/transaction_xml_footer.ftl"/>
+        </consumer>
+    </generate>
+    
+</setup>

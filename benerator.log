@@ -1,0 +1,1088 @@
+2012-09-16 20:47:40,279 DEBUG [org.databene.CONFIG] Initializing Script mapping from file org/databene/script/script.properties
+2012-09-16 20:47:40,745 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(bla) 10 times with page size 1 in a single thread
+2012-09-16 20:47:41,462 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 10 data sets from 'bla' setup in 810 ms (12/s)
+2012-09-16 20:47:41,485 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(bla) 10 times with page size 1 in a single thread
+2012-09-16 20:47:42,231 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 10 data sets from 'bla' setup in 756 ms (13/s)
+2012-09-16 20:47:44,049 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_SG.csv
+2012-09-16 20:47:44,067 ERROR [org.databene.domain.address.AddressGenerator] Error initializing members
+org.databene.benerator.InvalidGeneratorSetupException: Unable to create generator for atomic dataset: SG: 
+	at org.databene.benerator.dataset.AbstractDatasetGenerator.createAtomicDatasetGenerator(AbstractDatasetGenerator.java:163)
+	at org.databene.benerator.dataset.AbstractDatasetGenerator.createDatasetGenerator(AbstractDatasetGenerator.java:128)
+	at org.databene.benerator.dataset.AbstractDatasetGenerator.init(AbstractDatasetGenerator.java:100)
+	at org.databene.domain.address.AddressGenerator.initMembers(AddressGenerator.java:124)
+	at org.databene.domain.address.AddressGenerator.init(AddressGenerator.java:78)
+	at org.databene.domain.address.AddressGeneratorTest.check(AddressGeneratorTest.java:140)
+	at org.databene.domain.address.AddressGeneratorTest.testSingapore(AddressGeneratorTest.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+2012-09-16 20:47:44,069 ERROR [org.databene.domain.address.AddressGenerator] Cannot generate addresses for SG, falling back to United States
+2012-09-16 20:47:45,031 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:45,031 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:45,031 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:45,051 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:45,125 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:45,125 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:45,126 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:45,128 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:45,129 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:45,133 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:45,133 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:45,133 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:45,134 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:45,136 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:45,432 INFO  [org.databene.benerator.main.DBSnapshotTool] Starting DBSnapshotTool
+2012-09-16 20:47:45,433 INFO  [org.databene.benerator.main.DBSnapshotTool] Starting DBSnapshotTool
+2012-09-16 20:47:45,445 INFO  [org.databene.benerator.main.DBSnapshotTool] Starting DBSnapshotTool
+2012-09-16 20:47:45,445 INFO  [org.databene.benerator.main.DBSnapshotTool] Exporting data of database 'jdbc:hsqldb:mem:DBSnaphotToolTest' with driver 'org.hsqldb.jdbcDriver' as user 'sa' using schema 'PUBLIC' in dbunit format to file target/test.snapshot.dbunit.xml
+2012-09-16 20:47:45,448 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:45,448 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:45,448 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:45,484 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:45,541 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:45,588 INFO  [org.databene.benerator.main.DBSnapshotTool] Starting export
+2012-09-16 20:47:45,588 INFO  [org.databene.benerator.main.DBSnapshotTool] Exporting table T1
+2012-09-16 20:47:45,747 INFO  [org.databene.benerator.main.DBSnapshotTool] Exported 1 entities in 300 ms (12,000 p.h.)
+2012-09-16 20:47:45,763 INFO  [org.databene.benerator.main.DBSnapshotTool] Starting DBSnapshotTool
+2012-09-16 20:47:45,764 INFO  [org.databene.benerator.main.DBSnapshotTool] Exporting data of database 'jdbc:hsqldb:mem:DBSnaphotToolTest' with driver 'org.hsqldb.jdbcDriver' as user 'sa' using schema 'PUBLIC' in xls format to file target/test.snapshot.xls
+2012-09-16 20:47:45,771 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:45,771 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:45,771 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:45,777 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:45,780 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:45,813 INFO  [org.databene.benerator.main.DBSnapshotTool] Starting export
+2012-09-16 20:47:45,813 INFO  [org.databene.benerator.main.DBSnapshotTool] Exporting table T1
+2012-09-16 20:47:46,037 INFO  [org.databene.benerator.main.DBSnapshotTool] Exported 1 entities in 270 ms (13,000 p.h.)
+2012-09-16 20:47:47,758 INFO  [org.databene.benerator.main.XmlCreator] created file: target\enum.xml
+2012-09-16 20:47:47,758 INFO  [org.databene.benerator.main.XmlCreator] Finished after 33 ms
+2012-09-16 20:47:47,771 INFO  [org.databene.benerator.main.XmlCreator] created file: target\enum.xml
+2012-09-16 20:47:47,771 INFO  [org.databene.benerator.main.XmlCreator] Finished after 10 ms
+2012-09-16 20:47:47,784 INFO  [org.databene.benerator.main.XmlCreator] created file: target\enum.xml
+2012-09-16 20:47:47,784 INFO  [org.databene.benerator.main.XmlCreator] Finished after 11 ms
+2012-09-16 20:47:47,794 INFO  [org.databene.benerator.main.XmlCreator] created file: target\enum.xml
+2012-09-16 20:47:47,795 INFO  [org.databene.benerator.main.XmlCreator] Finished after 9 ms
+2012-09-16 20:47:47,812 INFO  [org.databene.benerator.main.XmlCreator] created file: target\enum.xml
+2012-09-16 20:47:47,812 INFO  [org.databene.benerator.main.XmlCreator] Finished after 15 ms
+2012-09-16 20:47:47,830 INFO  [org.databene.benerator.main.XmlCreator] created file: target\enum.xml
+2012-09-16 20:47:47,831 INFO  [org.databene.benerator.main.XmlCreator] Finished after 15 ms
+2012-09-16 20:47:47,841 INFO  [org.databene.benerator.main.XmlCreator] created file: target\enum.xml
+2012-09-16 20:47:47,841 INFO  [org.databene.benerator.main.XmlCreator] Finished after 9 ms
+2012-09-16 20:47:47,852 INFO  [org.databene.benerator.main.XmlCreator] created file: target\enum.xml
+2012-09-16 20:47:47,852 INFO  [org.databene.benerator.main.XmlCreator] Finished after 9 ms
+2012-09-16 20:47:47,863 INFO  [org.databene.benerator.main.XmlCreator] created file: target\enum.xml
+2012-09-16 20:47:47,863 INFO  [org.databene.benerator.main.XmlCreator] Finished after 9 ms
+2012-09-16 20:47:47,871 INFO  [org.databene.benerator.main.XmlCreator] created file: target\enum.xml
+2012-09-16 20:47:47,871 INFO  [org.databene.benerator.main.XmlCreator] Finished after 6 ms
+2012-09-16 20:47:47,881 INFO  [org.databene.benerator.main.XmlCreator] created file: target\simpleType.xml
+2012-09-16 20:47:47,881 INFO  [org.databene.benerator.main.XmlCreator] Finished after 8 ms
+2012-09-16 20:47:47,893 INFO  [org.databene.benerator.main.XmlCreator] created file: target\cardinalities.xml
+2012-09-16 20:47:47,893 INFO  [org.databene.benerator.main.XmlCreator] Finished after 10 ms
+2012-09-16 20:47:47,902 INFO  [org.databene.benerator.main.XmlCreator] created file: target\cardinalities.xml
+2012-09-16 20:47:47,902 INFO  [org.databene.benerator.main.XmlCreator] Finished after 8 ms
+2012-09-16 20:47:47,911 INFO  [org.databene.benerator.main.XmlCreator] created file: target\cardinalities.xml
+2012-09-16 20:47:47,911 INFO  [org.databene.benerator.main.XmlCreator] Finished after 8 ms
+2012-09-16 20:47:47,920 INFO  [org.databene.benerator.main.XmlCreator] created file: target\cardinalities.xml
+2012-09-16 20:47:47,921 INFO  [org.databene.benerator.main.XmlCreator] Finished after 7 ms
+2012-09-16 20:47:47,928 INFO  [org.databene.benerator.main.XmlCreator] created file: target\cardinalities.xml
+2012-09-16 20:47:47,928 INFO  [org.databene.benerator.main.XmlCreator] Finished after 6 ms
+2012-09-16 20:47:47,939 INFO  [org.databene.benerator.main.XmlCreator] created file: target\cardinalities.xml
+2012-09-16 20:47:47,939 INFO  [org.databene.benerator.main.XmlCreator] Finished after 9 ms
+2012-09-16 20:47:47,949 INFO  [org.databene.benerator.main.XmlCreator] created file: target\cardinalities.xml
+2012-09-16 20:47:47,949 INFO  [org.databene.benerator.main.XmlCreator] Finished after 9 ms
+2012-09-16 20:47:47,959 INFO  [org.databene.benerator.main.XmlCreator] created file: target\cardinalities.xml
+2012-09-16 20:47:47,959 INFO  [org.databene.benerator.main.XmlCreator] Finished after 8 ms
+2012-09-16 20:47:47,970 INFO  [org.databene.benerator.main.XmlCreator] created file: target\cardinalities.xml
+2012-09-16 20:47:47,970 INFO  [org.databene.benerator.main.XmlCreator] Finished after 10 ms
+2012-09-16 20:47:47,982 INFO  [org.databene.benerator.main.XmlCreator] created file: target\cardinalities.xml
+2012-09-16 20:47:47,982 INFO  [org.databene.benerator.main.XmlCreator] Finished after 10 ms
+2012-09-16 20:47:48,077 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(entity) 1000 times with page size 1 in a single thread
+2012-09-16 20:47:48,097 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 1000 data sets from 'entity' setup in 23 ms (43478/s)
+2012-09-16 20:47:48,293 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(Person) 
+2012-09-16 20:47:48,293 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 1 data sets from 'Person' setup in 22 ms (45/s)
+2012-09-16 20:47:48,294 INFO  [org.databene.benerator.engine.DescriptorRunner] Created a total of 1025 entities in 38 ms (~97,000,000 p.h.)
+2012-09-16 20:47:48,304 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_CH_de.csv
+2012-09-16 20:47:48,304 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_CH_fr.csv
+2012-09-16 20:47:48,304 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_CH_it.csv
+2012-09-16 20:47:48,305 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_BE.csv
+2012-09-16 20:47:48,305 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_LU.csv
+2012-09-16 20:47:48,305 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_LI.csv
+2012-09-16 20:47:48,306 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_MC.csv
+2012-09-16 20:47:48,306 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_AD.csv
+2012-09-16 20:47:48,306 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_PT.csv
+2012-09-16 20:47:48,307 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_SM.csv
+2012-09-16 20:47:48,307 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_VA.csv
+2012-09-16 20:47:48,307 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_GR.csv
+2012-09-16 20:47:48,307 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_CY.csv
+2012-09-16 20:47:48,308 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_AL.csv
+2012-09-16 20:47:48,308 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_HR.csv
+2012-09-16 20:47:48,308 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_BA.csv
+2012-09-16 20:47:48,309 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_ME.csv
+2012-09-16 20:47:48,309 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_MK.csv
+2012-09-16 20:47:48,309 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_RS.csv
+2012-09-16 20:47:48,310 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_RO.csv
+2012-09-16 20:47:48,310 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_BG.csv
+2012-09-16 20:47:48,311 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_UA.csv
+2012-09-16 20:47:48,311 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_UK.csv
+2012-09-16 20:47:48,313 WARN  [org.databene.benerator.dataset.DatasetUtil] Data file not found: org/databene/domain/person/familyName_IS.csv
+2012-09-16 20:47:49,212 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing script src\test\resources\org\databene\benerator\engine\transcode\createTables.sql
+2012-09-16 20:47:49,224 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:49,226 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:49,226 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:49,244 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing script src\test\resources\org\databene\benerator\engine\transcode\createTables.sql
+2012-09-16 20:47:49,256 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:49,256 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:49,257 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:49,261 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:49,269 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:49,273 WARN  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Table name is a reserved word: USER
+2012-09-16 20:47:49,278 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:49,307 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:49,308 WARN  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Table name is a reserved word: USER
+2012-09-16 20:47:49,308 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:49,336 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Starting transcoding of country from s to t
+2012-09-16 20:47:49,350 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Finished transcoding 2 rows of table country
+2012-09-16 20:47:49,352 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(COUNTRY) 
+2012-09-16 20:47:49,352 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 1 data sets from 'country' setup in 2 ms (500/s)
+2012-09-16 20:47:49,353 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(STATE) 
+2012-09-16 20:47:49,354 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'state' setup in 2 ms (1000/s)
+2012-09-16 20:47:49,354 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(CITY) 
+2012-09-16 20:47:49,355 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'city' setup in 1 ms (2000/s)
+2012-09-16 20:47:49,362 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing script src\test\resources\org\databene\benerator\engine\transcode\createTables.sql
+2012-09-16 20:47:49,363 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:49,363 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:49,363 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:49,365 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing script src\test\resources\org\databene\benerator\engine\transcode\createTables.sql
+2012-09-16 20:47:49,365 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:49,365 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:49,365 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:49,367 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:49,368 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:49,371 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:49,372 WARN  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Table name is a reserved word: USER
+2012-09-16 20:47:49,373 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:49,387 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:49,389 WARN  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Table name is a reserved word: USER
+2012-09-16 20:47:49,389 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:49,400 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Starting transcoding of country from s to t
+2012-09-16 20:47:49,403 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Finished transcoding 2 rows of table country
+2012-09-16 20:47:49,403 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Starting transcoding of state from s to t
+2012-09-16 20:47:49,406 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Finished transcoding 4 rows of table state
+2012-09-16 20:47:49,407 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(COUNTRY) 
+2012-09-16 20:47:49,408 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'country' setup in 2 ms (1000/s)
+2012-09-16 20:47:49,408 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(STATE) 
+2012-09-16 20:47:49,409 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 4 data sets from 'state' setup in 1 ms (4000/s)
+2012-09-16 20:47:49,415 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing script src\test\resources\org\databene\benerator\engine\transcode\createTables.sql
+2012-09-16 20:47:49,416 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:49,416 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:49,416 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:49,417 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing script src\test\resources\org\databene\benerator\engine\transcode\createTables.sql
+2012-09-16 20:47:49,418 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:49,418 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:49,418 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:49,419 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:49,422 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:49,423 WARN  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Table name is a reserved word: USER
+2012-09-16 20:47:49,425 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:49,436 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:49,437 WARN  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Table name is a reserved word: USER
+2012-09-16 20:47:49,437 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:49,447 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Starting transcoding of country from s to t
+2012-09-16 20:47:49,449 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Finished transcoding 2 rows of table country
+2012-09-16 20:47:49,449 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Starting transcoding of state from s to t
+2012-09-16 20:47:49,452 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Finished transcoding 4 rows of table state
+2012-09-16 20:47:49,453 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(COUNTRY) 
+2012-09-16 20:47:49,454 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'country' setup in 2 ms (1000/s)
+2012-09-16 20:47:49,455 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(STATE) 
+2012-09-16 20:47:49,456 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 4 data sets from 'state' setup in 2 ms (2000/s)
+2012-09-16 20:47:49,463 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing script src\test\resources\org\databene\benerator\engine\transcode\createTables.sql
+2012-09-16 20:47:49,463 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:49,463 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:49,463 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:49,464 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing script src\test\resources\org\databene\benerator\engine\transcode\createTables.sql
+2012-09-16 20:47:49,464 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:49,465 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:49,465 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:49,466 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:49,467 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:49,469 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:49,469 WARN  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Table name is a reserved word: USER
+2012-09-16 20:47:49,470 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:49,481 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:49,482 WARN  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Table name is a reserved word: USER
+2012-09-16 20:47:49,482 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:49,502 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Starting transcoding of state from s to t
+2012-09-16 20:47:49,520 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Finished transcoding 4 rows of table state
+2012-09-16 20:47:49,520 INFO  [org.databene.benerator.engine.DescriptorRunner] Created a total of 1042 entities in 58 ms (~64,000,000 p.h.)
+2012-09-16 20:47:49,530 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing script src\test\resources\org\databene\benerator\engine\transcode\createTables.sql
+2012-09-16 20:47:49,530 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:49,530 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:49,530 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:49,532 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing script src\test\resources\org\databene\benerator\engine\transcode\createTables.sql
+2012-09-16 20:47:49,532 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:49,533 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:49,533 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:49,535 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:49,539 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:49,541 WARN  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Table name is a reserved word: USER
+2012-09-16 20:47:49,541 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:49,556 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:49,556 WARN  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Table name is a reserved word: USER
+2012-09-16 20:47:49,556 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:49,567 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Starting transcoding of country from s to t
+2012-09-16 20:47:49,568 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Finished transcoding 2 rows of table country
+2012-09-16 20:47:49,569 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Starting transcoding of state from s to t
+2012-09-16 20:47:49,571 INFO  [org.databene.benerator.engine.statement.TranscodeStatement] Finished transcoding 5 rows of table state
+2012-09-16 20:47:49,572 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(COUNTRY) 
+2012-09-16 20:47:49,572 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 1 data sets from 'country' setup in 1 ms (1000/s)
+2012-09-16 20:47:49,573 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(STATE) 
+2012-09-16 20:47:49,573 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'state' setup in 1 ms (3000/s)
+2012-09-16 20:47:49,625 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(deb_transactions) 100 times with page size 1 in a single thread
+2012-09-16 20:47:49,632 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 100 data sets from 'deb_transactions' setup in 8 ms (12500/s)
+2012-09-16 20:47:49,634 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(trailer_record) 
+2012-09-16 20:47:49,639 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 1 data sets from 'trailer_record' setup in 7 ms (142/s)
+2012-09-16 20:47:49,640 INFO  [org.databene.benerator.engine.DescriptorRunner] Created a total of 1147 entities in 19 ms (~210,000,000 p.h.)
+2012-09-16 20:47:50,245 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:50,245 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:50,245 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:50,290 DEBUG [org.databene.COMMENT] Hello
+2012-09-16 20:47:50,568 WARN  [org.databene.benerator.engine.expression.xml.XMLConsumerExpression] XMLConsumerExpression(<generate count="3" type="Person"...): No consumers defined for null
+2012-09-16 20:47:50,575 WARN  [org.databene.benerator.engine.expression.xml.XMLConsumerExpression] XMLConsumerExpression(<generate count="3" type="Person"...): No consumers defined for null
+2012-09-16 20:47:50,645 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(Person) 
+2012-09-16 20:47:50,645 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 1 data sets from 'Person' setup in 1 ms (1000/s)
+2012-09-16 20:47:50,645 INFO  [org.databene.benerator.engine.DescriptorRunner] Created a total of 190 entities in 1 ms (~680,000,000 p.h.)
+2012-09-16 20:47:50,928 INFO  [org.databene.task.runner.PagedTaskRunner] Running task SynchronizedTask[GenerateAndConsumeTask(myTask)] 6000 times with page size 300 in 30 threads
+2012-09-16 20:47:51,404 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:51,404 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:51,404 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:51,411 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:51,412 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:51,422 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:51,422 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:51,423 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:51,426 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:51,426 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:51,433 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:51,433 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:51,434 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:51,437 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:51,438 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:51,445 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:51,445 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:51,446 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:51,449 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:51,450 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:51,458 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:51,458 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:51,458 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:51,462 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:51,463 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:51,473 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:51,473 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:51,473 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:51,477 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:51,477 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:51,477 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:51,479 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:51,480 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:51,480 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:51,482 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:51,483 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:51,795 INFO  [org.databene.benerator.engine.DescriptorRunner] Created a total of 6190 entities 
+2012-09-16 20:47:51,810 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(dummy) 100 times with page size 20 in a single thread
+2012-09-16 20:47:51,813 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 100 data sets from 'dummy' setup in 5 ms (20000/s)
+2012-09-16 20:47:51,821 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:51,821 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:51,821 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:51,825 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:51,826 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:51,833 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(GOIPAST) 
+2012-09-16 20:47:51,834 WARN  [org.databene.platform.db.DBSystem] Table 'GOIPAST' not found in the expected catalog 'null' and schema 'null'. I have taken it from catalog 'null' and schema 'PUBLIC' instead. You better make sure this is right and fix the configuration
+2012-09-16 20:47:51,835 WARN  [org.databene.platform.db.DBSystem] Table 'GOIPAST' not found in the expected catalog 'null' and schema 'null'. I have taken it from catalog 'null' and schema 'PUBLIC' instead. You better make sure this is right and fix the configuration
+2012-09-16 20:47:51,835 WARN  [org.databene.platform.db.DBSystem] Table 'GOIPAST' not found in the expected catalog 'null' and schema 'null'. I have taken it from catalog 'null' and schema 'PUBLIC' instead. You better make sure this is right and fix the configuration
+2012-09-16 20:47:51,835 WARN  [org.databene.platform.db.DBSystem] Table 'GOIPAST' not found in the expected catalog 'null' and schema 'null'. I have taken it from catalog 'null' and schema 'PUBLIC' instead. You better make sure this is right and fix the configuration
+2012-09-16 20:47:51,836 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'GOIPAST' setup in 13 ms (153/s)
+2012-09-16 20:47:51,840 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(Person) 
+2012-09-16 20:47:51,841 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 'Person' data set(s)
+2012-09-16 20:47:51,843 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(Person) 2 times with page size 1 in a single thread
+2012-09-16 20:47:51,843 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'Person' setup in 1 ms (2000/s)
+2012-09-16 20:47:51,846 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(array) 5 times with page size 1 in a single thread
+2012-09-16 20:47:51,847 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 5 data sets from 'array' setup in 3 ms (1666/s)
+2012-09-16 20:47:51,851 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(pName) 3 times with page size 1 in a single thread
+2012-09-16 20:47:51,852 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'pName' setup in 3 ms (1000/s)
+2012-09-16 20:47:51,855 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(top) 3 times with page size 1 in a single thread
+2012-09-16 20:47:51,856 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 9 data sets from 'top' setup in 3 ms (3000/s)
+2012-09-16 20:47:51,858 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(top) 4 times with page size 0 in a single thread
+2012-09-16 20:47:51,858 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 4 data sets from 'top' setup in 1 ms (4000/s)
+2012-09-16 20:47:51,861 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(top) 4 times with page size 2 in a single thread
+2012-09-16 20:47:51,861 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 4 data sets from 'top' setup in 1 ms (4000/s)
+2012-09-16 20:47:51,864 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(dummy) 3 times with page size 1 in a single thread
+2012-09-16 20:47:51,865 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'dummy' setup in 2 ms (1500/s)
+2012-09-16 20:47:51,869 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(dummy) 3 times with page size 1 in a single thread
+2012-09-16 20:47:51,869 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'dummy' setup in 1 ms (3000/s)
+2012-09-16 20:47:51,873 WARN  [org.databene.benerator.engine.expression.xml.XMLConsumerExpression] XMLConsumerExpression(<generate count="3" type="top"...): No consumers defined for null
+2012-09-16 20:47:51,878 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(top) 3 times with page size 1 in a single thread
+2012-09-16 20:47:51,880 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 9 data sets from 'top' setup in 8 ms (1125/s)
+2012-09-16 20:47:51,884 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(top) 2 times with page size 1 in a single thread
+2012-09-16 20:47:51,885 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 10 data sets from 'top' setup in 2 ms (5000/s)
+2012-09-16 20:47:51,889 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(top) 2 times with page size 1 in a single thread
+2012-09-16 20:47:51,889 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 4 data sets from 'top' setup in 1 ms (4000/s)
+2012-09-16 20:47:51,893 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(pName) 3 times with page size 1 in a single thread
+2012-09-16 20:47:51,897 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 9 data sets from 'pName' setup in 6 ms (1500/s)
+2012-09-16 20:47:51,900 WARN  [org.databene.benerator.engine.expression.xml.XMLConsumerExpression] XMLConsumerExpression(<generate count="3" type="dummy"...): No consumers defined for null
+2012-09-16 20:47:51,900 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(dummy) 3 times with page size 1 in a single thread
+2012-09-16 20:47:51,902 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'dummy' setup in 2 ms (1500/s)
+2012-09-16 20:47:51,905 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(array) 3 times with page size 1 in a single thread
+2012-09-16 20:47:51,906 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'array' setup in 2 ms (1500/s)
+2012-09-16 20:47:51,908 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(array) 3 times with page size 1 in a single thread
+2012-09-16 20:47:51,908 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 'array' data set(s)
+2012-09-16 20:47:51,913 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(a) 2 times with page size 1 in a single thread
+2012-09-16 20:47:51,915 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 14 data sets from 'a' setup in 5 ms (2800/s)
+2012-09-16 20:47:51,921 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(a) 2 times with page size 1 in a single thread
+2012-09-16 20:47:51,923 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 14 data sets from 'a' setup in 5 ms (2800/s)
+2012-09-16 20:47:52,901 ERROR [org.databene.benerator.util.GeneratorUtil] Data set of generator has reached the cache limit and will be reduced to its size of 2 elements). If that is not acceptable then choose a distribution that does not cache data sets or increase the cache size. Concerned generator: SequenceTestGenerator[1, 2, 3, 4]
+2012-09-16 20:47:52,937 ERROR [org.databene.benerator.util.GeneratorUtil] Data set of generator has reached the cache limit and will be reduced to its size of 100000 elements). If that is not acceptable then choose a distribution that does not cache data sets or increase the cache size. Concerned generator: IncrementGenerator[100002]
+2012-09-16 20:47:52,966 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(product) 
+2012-09-16 20:47:52,966 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'product' setup in 1 ms (3000/s)
+2012-09-16 20:47:52,971 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(order) 
+2012-09-16 20:47:52,975 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'order' setup in 6 ms (500/s)
+2012-09-16 20:47:52,981 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(product) 100 times with page size 1 in a single thread
+2012-09-16 20:47:52,990 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 100 data sets from 'product' setup in 11 ms (9090/s)
+2012-09-16 20:47:52,995 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(order) 
+2012-09-16 20:47:53,001 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'order' setup in 7 ms (428/s)
+2012-09-16 20:47:53,008 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(product) 
+2012-09-16 20:47:53,013 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 1 data sets from 'product' setup in 8 ms (125/s)
+2012-09-16 20:47:53,021 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(order) 
+2012-09-16 20:47:53,022 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'order' setup in 6 ms (333/s)
+2012-09-16 20:47:53,027 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(product) 3 times with page size 1 in a single thread
+2012-09-16 20:47:53,027 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'product' setup in 1 ms (3000/s)
+2012-09-16 20:47:53,098 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:53,098 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:53,098 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:53,100 ERROR [org.databene.platform.db.DBSeqHiLoGeneratorTest] java.sql.SQLException: Sequence not found in statement [drop sequence seq_id_gen]
+java.lang.RuntimeException: java.sql.SQLException: Sequence not found in statement [drop sequence seq_id_gen]
+	at org.databene.platform.db.DBSystem.execute(DBSystem.java:497)
+	at org.databene.platform.db.DBSystem.dropSequence(DBSystem.java:488)
+	at org.databene.platform.db.DBSeqHiLoGeneratorTest.dropSequence(DBSeqHiLoGeneratorTest.java:89)
+	at org.databene.platform.db.DBSeqHiLoGeneratorTest.setUpDatabase(DBSeqHiLoGeneratorTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+Caused by: java.sql.SQLException: Sequence not found in statement [drop sequence seq_id_gen]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.jdbcStatement.fetchResult(Unknown Source)
+	at org.hsqldb.jdbc.jdbcStatement.executeUpdate(Unknown Source)
+	at org.databene.jdbacl.proxy.LoggingStatementHandler.executeUpdate(LoggingStatementHandler.java:189)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.databene.commons.BeanUtil.invoke(BeanUtil.java:702)
+	at org.databene.commons.BeanUtil.invoke(BeanUtil.java:661)
+	at org.databene.jdbacl.proxy.LoggingStatementHandler.invoke(LoggingStatementHandler.java:104)
+	at $Proxy14.executeUpdate(Unknown Source)
+	at org.databene.jdbacl.DBUtil.executeUpdate(DBUtil.java:487)
+	at org.databene.platform.db.DBSystem.execute(DBSystem.java:494)
+	... 31 more
+2012-09-16 20:47:53,111 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:53,111 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:53,111 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:53,113 ERROR [org.databene.platform.db.DBSeqHiLoGeneratorTest] java.sql.SQLException: Sequence not found in statement [drop sequence seq_id_gen]
+java.lang.RuntimeException: java.sql.SQLException: Sequence not found in statement [drop sequence seq_id_gen]
+	at org.databene.platform.db.DBSystem.execute(DBSystem.java:497)
+	at org.databene.platform.db.DBSystem.dropSequence(DBSystem.java:488)
+	at org.databene.platform.db.DBSeqHiLoGeneratorTest.dropSequence(DBSeqHiLoGeneratorTest.java:89)
+	at org.databene.platform.db.DBSeqHiLoGeneratorTest.setUpDatabase(DBSeqHiLoGeneratorTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+Caused by: java.sql.SQLException: Sequence not found in statement [drop sequence seq_id_gen]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.jdbcStatement.fetchResult(Unknown Source)
+	at org.hsqldb.jdbc.jdbcStatement.executeUpdate(Unknown Source)
+	at org.databene.jdbacl.proxy.LoggingStatementHandler.executeUpdate(LoggingStatementHandler.java:189)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.databene.commons.BeanUtil.invoke(BeanUtil.java:702)
+	at org.databene.commons.BeanUtil.invoke(BeanUtil.java:661)
+	at org.databene.jdbacl.proxy.LoggingStatementHandler.invoke(LoggingStatementHandler.java:104)
+	at $Proxy14.executeUpdate(Unknown Source)
+	at org.databene.jdbacl.DBUtil.executeUpdate(DBUtil.java:487)
+	at org.databene.platform.db.DBSystem.execute(DBSystem.java:494)
+	... 31 more
+2012-09-16 20:47:54,158 ERROR [org.databene.domain.person.PersonGenerator] Error initializing PersonGenerator
+org.databene.benerator.InvalidGeneratorSetupException: Unable to create generator for atomic dataset: CN: 
+	at org.databene.benerator.dataset.AbstractDatasetGenerator.createAtomicDatasetGenerator(AbstractDatasetGenerator.java:163)
+	at org.databene.benerator.dataset.AbstractDatasetGenerator.createDatasetGenerator(AbstractDatasetGenerator.java:128)
+	at org.databene.benerator.dataset.AbstractDatasetGenerator.init(AbstractDatasetGenerator.java:100)
+	at org.databene.domain.person.PersonGenerator.registerAndInitComponent(PersonGenerator.java:200)
+	at org.databene.domain.person.PersonGenerator.initMembersWithDataset(PersonGenerator.java:230)
+	at org.databene.domain.person.PersonGenerator.init(PersonGenerator.java:184)
+	at org.databene.domain.person.PersonGeneratorTest.testChina(PersonGeneratorTest.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+2012-09-16 20:47:54,160 ERROR [org.databene.domain.person.PersonGenerator] Cannot generate persons for CN, falling back to United States
+2012-09-16 20:47:54,560 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset dach, falling back to US
+2012-09-16 20:47:54,784 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset dach, falling back to US
+2012-09-16 20:47:54,787 WARN  [org.databene.benerator.dataset.CompositeDatasetGenerator] requested dataset not found: LI
+2012-09-16 20:47:54,787 WARN  [org.databene.benerator.dataset.CompositeDatasetGenerator] Falling back to data set 'DE'
+2012-09-16 20:47:54,787 WARN  [org.databene.benerator.dataset.CompositeDatasetGenerator] requested dataset not found: LI
+2012-09-16 20:47:54,787 WARN  [org.databene.benerator.dataset.CompositeDatasetGenerator] Falling back to data set 'DE'
+2012-09-16 20:47:54,804 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset dach, falling back to US
+2012-09-16 20:47:54,807 WARN  [org.databene.benerator.dataset.CompositeDatasetGenerator] requested dataset not found: US
+2012-09-16 20:47:54,807 WARN  [org.databene.benerator.dataset.CompositeDatasetGenerator] Falling back to data set 'DE'
+2012-09-16 20:47:54,807 WARN  [org.databene.benerator.dataset.CompositeDatasetGenerator] requested dataset not found: US
+2012-09-16 20:47:54,807 WARN  [org.databene.benerator.dataset.CompositeDatasetGenerator] Falling back to data set 'DE'
+2012-09-16 20:47:54,827 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset dach, falling back to US
+2012-09-16 20:47:54,833 WARN  [org.databene.benerator.dataset.CompositeDatasetGenerator] requested dataset not found: xx
+2012-09-16 20:47:54,833 WARN  [org.databene.benerator.dataset.CompositeDatasetGenerator] Falling back to data set 'DE'
+2012-09-16 20:47:54,834 WARN  [org.databene.benerator.dataset.CompositeDatasetGenerator] requested dataset not found: xx
+2012-09-16 20:47:54,834 WARN  [org.databene.benerator.dataset.CompositeDatasetGenerator] Falling back to data set 'DE'
+2012-09-16 20:47:55,625 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(null) 3 times with page size 1 in a single thread
+2012-09-16 20:47:55,626 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'anonymous' setup in 3 ms (1000/s)
+2012-09-16 20:47:55,626 INFO  [org.databene.benerator.engine.DescriptorRunner] Created a total of 168 entities in 4 ms (~150,000,000 p.h.)
+2012-09-16 20:47:55,631 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:55,631 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:55,632 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:55,762 WARN  [org.databene.platform.array.Array2EntityConverter] Array2EntityConverter[name, age]: Row has more columns than specified in the file header: Alice, 23, superfluous
+2012-09-16 20:47:55,781 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:55,781 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:55,781 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:55,785 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:55,787 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:55,800 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 3 times with page size 1 in a single thread
+2012-09-16 20:47:55,801 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'referer' setup in 3 ms (1000/s)
+2012-09-16 20:47:55,804 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:55,804 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:55,804 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:55,810 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:55,811 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,168 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 3 times with page size 1 in a single thread
+2012-09-16 20:47:56,170 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'referer' setup in 349 ms (8/s)
+2012-09-16 20:47:56,173 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,173 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,173 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,178 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,179 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,192 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 3 times with page size 1 in a single thread
+2012-09-16 20:47:56,193 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'referer' setup in 2 ms (1500/s)
+2012-09-16 20:47:56,196 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,196 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,196 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,200 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,201 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,220 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 
+2012-09-16 20:47:56,220 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 2 ms (1000/s)
+2012-09-16 20:47:56,223 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,223 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,223 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,227 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,228 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,240 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,246 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 7 ms (285/s)
+2012-09-16 20:47:56,247 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,247 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,247 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,250 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,250 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,258 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,261 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 5 ms (400/s)
+2012-09-16 20:47:56,263 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,263 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,264 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,266 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,267 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,277 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,280 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 4 ms (500/s)
+2012-09-16 20:47:56,282 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,283 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,283 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,287 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,287 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,298 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,301 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 6 ms (333/s)
+2012-09-16 20:47:56,304 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,304 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,304 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,308 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,309 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,319 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,322 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 5 ms (400/s)
+2012-09-16 20:47:56,325 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,325 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,326 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,330 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,331 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,341 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,343 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 4 ms (500/s)
+2012-09-16 20:47:56,346 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,346 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,346 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,349 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,350 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,357 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,362 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 6 ms (333/s)
+2012-09-16 20:47:56,365 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,365 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,365 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,369 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,369 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,378 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 
+2012-09-16 20:47:56,379 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] No data created for 'referer' setup
+2012-09-16 20:47:56,382 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,382 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,382 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,385 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,386 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,394 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,395 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 2 ms (1000/s)
+2012-09-16 20:47:56,398 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,398 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,398 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,402 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,403 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,413 INFO  [org.databene.benerator.engine.statement.EvaluateStatement] Executing inline script
+2012-09-16 20:47:56,416 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,416 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,416 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,420 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,421 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,427 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 3 times with page size 1 in a single thread
+2012-09-16 20:47:56,428 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'referer' setup in 1 ms (3000/s)
+2012-09-16 20:47:56,431 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,431 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,431 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,435 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,436 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,447 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 3 times with page size 1 in a single thread
+2012-09-16 20:47:56,448 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'referer' setup in 5 ms (600/s)
+2012-09-16 20:47:56,450 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,450 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,450 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,454 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,454 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,463 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 3 times with page size 1 in a single thread
+2012-09-16 20:47:56,464 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'referer' setup in 2 ms (1500/s)
+2012-09-16 20:47:56,466 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,466 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,466 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,470 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,471 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,478 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 3 times with page size 1 in a single thread
+2012-09-16 20:47:56,478 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'referer' setup in 1 ms (3000/s)
+2012-09-16 20:47:56,481 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,481 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,481 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,484 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,501 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,512 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 3 times with page size 1 in a single thread
+2012-09-16 20:47:56,513 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'referer' setup in 2 ms (1500/s)
+2012-09-16 20:47:56,516 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,516 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,516 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,520 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,521 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,531 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 3 times with page size 1 in a single thread
+2012-09-16 20:47:56,532 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'referer' setup in 3 ms (1000/s)
+2012-09-16 20:47:56,536 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,536 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,536 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,541 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,542 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,556 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 
+2012-09-16 20:47:56,558 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 1 data sets from 'referer' setup in 10 ms (100/s)
+2012-09-16 20:47:56,560 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,561 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,561 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,565 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,566 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,575 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 
+2012-09-16 20:47:56,577 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 1 data sets from 'referer' setup in 4 ms (250/s)
+2012-09-16 20:47:56,581 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,581 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,581 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,586 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,587 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,597 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFEREE) 
+2012-09-16 20:47:56,604 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referee' setup in 9 ms (222/s)
+2012-09-16 20:47:56,607 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,607 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,607 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,611 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,612 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,617 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 3 times with page size 1 in a single thread
+2012-09-16 20:47:56,618 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 3 data sets from 'referer' setup in 2 ms (1500/s)
+2012-09-16 20:47:56,621 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,621 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,621 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,625 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,625 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,632 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFEREE) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,633 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 6 data sets from 'referee' setup in 2 ms (3000/s)
+2012-09-16 20:47:56,635 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,636 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,636 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,639 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,640 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,647 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFEREE) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,649 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 6 data sets from 'referee' setup in 3 ms (2000/s)
+2012-09-16 20:47:56,651 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,651 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,651 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,655 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,657 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,662 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFEREE) 2 times with page size 0 in a single thread
+2012-09-16 20:47:56,663 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 6 data sets from 'referee' setup in 2 ms (3000/s)
+2012-09-16 20:47:56,666 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,666 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,666 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,669 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,670 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,677 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,678 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 4 ms (500/s)
+2012-09-16 20:47:56,680 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,681 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,681 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,684 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,685 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,693 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,696 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 5 ms (400/s)
+2012-09-16 20:47:56,698 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,698 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,698 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,701 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,702 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,709 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFERER) 2 times with page size 1 in a single thread
+2012-09-16 20:47:56,710 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 2 ms (1000/s)
+2012-09-16 20:47:56,713 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,713 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,713 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,717 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,718 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,724 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFEREE) 
+2012-09-16 20:47:56,726 ERROR [org.databene.benerator.engine.statement.GenerateOrIterateStatement] Error in execution of task REFEREE
+java.lang.RuntimeException: Error in persisting REFEREE[ID=11, N=2]
+	at org.databene.platform.db.DBSystem.persistOrUpdate(DBSystem.java:872)
+	at org.databene.platform.db.DBSystem.update(DBSystem.java:364)
+	at org.databene.benerator.storage.StorageSystemUpdater.startProductConsumption(StorageSystemUpdater.java:42)
+	at org.databene.benerator.consumer.AbstractConsumer.startConsuming(AbstractConsumer.java:46)
+	at org.databene.benerator.consumer.ConsumerProxy.startConsuming(ConsumerProxy.java:50)
+	at org.databene.benerator.consumer.ConsumerChain.startConsuming(ConsumerChain.java:78)
+	at org.databene.benerator.engine.statement.ConsumptionStatement.execute(ConsumptionStatement.java:52)
+	at org.databene.benerator.engine.statement.GenerateAndConsumeTask.execute(GenerateAndConsumeTask.java:155)
+	at org.databene.task.TaskProxy.execute(TaskProxy.java:58)
+	at org.databene.task.StateTrackingTaskProxy.execute(StateTrackingTaskProxy.java:52)
+	at org.databene.task.runner.SingleThreadedTaskRunner.runWithoutPage(SingleThreadedTaskRunner.java:56)
+	at org.databene.task.runner.SingleThreadedTaskRunner.run(SingleThreadedTaskRunner.java:46)
+	at org.databene.task.runner.PagedTaskRunner.run(PagedTaskRunner.java:141)
+	at org.databene.task.runner.PagedTaskRunner.run(PagedTaskRunner.java:101)
+	at org.databene.task.runner.PagedTaskRunner.execute(PagedTaskRunner.java:169)
+	at org.databene.benerator.engine.statement.GenerateOrIterateStatement.execute(GenerateOrIterateStatement.java:112)
+	at org.databene.benerator.engine.statement.LazyStatement.execute(LazyStatement.java:58)
+	at org.databene.benerator.engine.statement.StatementProxy.execute(StatementProxy.java:45)
+	at org.databene.benerator.engine.statement.TimedGeneratorStatement.execute(TimedGeneratorStatement.java:66)
+	at org.databene.benerator.test.BeneratorIntegrationTest.parseAndExecute(BeneratorIntegrationTest.java:70)
+	at org.databene.benerator.engine.DatabaseIntegrationTest.testUpdateOnNonExistingPK(DatabaseIntegrationTest.java:591)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:22)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+Caused by: java.lang.RuntimeException: Update failed because, since there is no database entry with the PK of REFEREE[ID=11, N=2]
+	at org.databene.platform.db.DBSystem.persistOrUpdate(DBSystem.java:869)
+	... 50 more
+2012-09-16 20:47:56,728 ERROR [org.databene.benerator.engine.statement.GenerateOrIterateStatement] Error in execution of task GenerateAndConsumeTask
+java.lang.RuntimeException: java.lang.RuntimeException: Error in persisting REFEREE[ID=11, N=2]
+	at org.databene.commons.ErrorHandler.handleError(ErrorHandler.java:91)
+	at org.databene.benerator.engine.statement.GenerateAndConsumeTask.execute(GenerateAndConsumeTask.java:172)
+	at org.databene.task.TaskProxy.execute(TaskProxy.java:58)
+	at org.databene.task.StateTrackingTaskProxy.execute(StateTrackingTaskProxy.java:52)
+	at org.databene.task.runner.SingleThreadedTaskRunner.runWithoutPage(SingleThreadedTaskRunner.java:56)
+	at org.databene.task.runner.SingleThreadedTaskRunner.run(SingleThreadedTaskRunner.java:46)
+	at org.databene.task.runner.PagedTaskRunner.run(PagedTaskRunner.java:141)
+	at org.databene.task.runner.PagedTaskRunner.run(PagedTaskRunner.java:101)
+	at org.databene.task.runner.PagedTaskRunner.execute(PagedTaskRunner.java:169)
+	at org.databene.benerator.engine.statement.GenerateOrIterateStatement.execute(GenerateOrIterateStatement.java:112)
+	at org.databene.benerator.engine.statement.LazyStatement.execute(LazyStatement.java:58)
+	at org.databene.benerator.engine.statement.StatementProxy.execute(StatementProxy.java:45)
+	at org.databene.benerator.engine.statement.TimedGeneratorStatement.execute(TimedGeneratorStatement.java:66)
+	at org.databene.benerator.test.BeneratorIntegrationTest.parseAndExecute(BeneratorIntegrationTest.java:70)
+	at org.databene.benerator.engine.DatabaseIntegrationTest.testUpdateOnNonExistingPK(DatabaseIntegrationTest.java:591)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:22)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+Caused by: java.lang.RuntimeException: Error in persisting REFEREE[ID=11, N=2]
+	at org.databene.platform.db.DBSystem.persistOrUpdate(DBSystem.java:872)
+	at org.databene.platform.db.DBSystem.update(DBSystem.java:364)
+	at org.databene.benerator.storage.StorageSystemUpdater.startProductConsumption(StorageSystemUpdater.java:42)
+	at org.databene.benerator.consumer.AbstractConsumer.startConsuming(AbstractConsumer.java:46)
+	at org.databene.benerator.consumer.ConsumerProxy.startConsuming(ConsumerProxy.java:50)
+	at org.databene.benerator.consumer.ConsumerChain.startConsuming(ConsumerChain.java:78)
+	at org.databene.benerator.engine.statement.ConsumptionStatement.execute(ConsumptionStatement.java:52)
+	at org.databene.benerator.engine.statement.GenerateAndConsumeTask.execute(GenerateAndConsumeTask.java:155)
+	... 43 more
+Caused by: java.lang.RuntimeException: Update failed because, since there is no database entry with the PK of REFEREE[ID=11, N=2]
+	at org.databene.platform.db.DBSystem.persistOrUpdate(DBSystem.java:869)
+	... 50 more
+2012-09-16 20:47:56,786 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,786 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,786 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,790 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:56,790 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:56,798 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(REFEREE) 
+2012-09-16 20:47:56,799 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referee' setup in 3 ms (666/s)
+2012-09-16 20:47:56,812 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,813 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,813 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:56,817 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:56,817 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:56,817 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:57,198 INFO  [org.databene.domain.organization.CompanyNameGenerator] Cannot create sector generator: No localization found for /org/databene/domain/organization/sector.csv on locale pt_BR. Falling back to US
+2012-09-16 20:47:57,210 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_CA.csv
+2012-09-16 20:47:57,210 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,217 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_MX.csv
+2012-09-16 20:47:57,217 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,220 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_BS.csv
+2012-09-16 20:47:57,220 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,223 INFO  [org.databene.domain.organization.CompanyNameGenerator] Cannot create sector generator: No localization found for /org/databene/domain/organization/sector.csv on locale pt_BR. Falling back to US
+2012-09-16 20:47:57,225 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_CL.csv
+2012-09-16 20:47:57,225 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,228 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_AR.csv
+2012-09-16 20:47:57,229 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,231 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_EC.csv
+2012-09-16 20:47:57,231 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,236 ERROR [org.databene.domain.organization.CompanyNameGenerator] Cannot create legal form generator: No samples defined for composite dataset: CH in generator LegalFormGenerator[/org/databene/domain/organization/legalForm_{0}.csv,/org/databene/dataset/region:CH]. Falling back to US. 
+2012-09-16 20:47:57,238 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,245 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_NL.csv
+2012-09-16 20:47:57,245 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,252 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_BE.csv
+2012-09-16 20:47:57,252 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,255 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_LU.csv
+2012-09-16 20:47:57,255 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,262 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_LI.csv
+2012-09-16 20:47:57,262 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,265 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_FR.csv
+2012-09-16 20:47:57,265 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,267 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_MC.csv
+2012-09-16 20:47:57,268 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,270 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_ES.csv
+2012-09-16 20:47:57,270 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,273 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_AD.csv
+2012-09-16 20:47:57,273 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,275 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_PT.csv
+2012-09-16 20:47:57,275 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,283 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_IT.csv
+2012-09-16 20:47:57,283 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,286 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_SM.csv
+2012-09-16 20:47:57,286 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,289 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_VA.csv
+2012-09-16 20:47:57,289 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,294 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_GR.csv
+2012-09-16 20:47:57,294 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,297 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_CY.csv
+2012-09-16 20:47:57,297 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,306 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_TR.csv
+2012-09-16 20:47:57,306 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,309 ERROR [org.databene.domain.organization.CompanyNameGenerator] Cannot create legal form generator: Unable to create generator for atomic dataset: PL: . Falling back to US. 
+2012-09-16 20:47:57,310 INFO  [org.databene.domain.organization.CompanyNameGenerator] Cannot create sector generator: No localization found for /org/databene/domain/organization/sector.csv on locale pl_PL. Falling back to US
+2012-09-16 20:47:57,313 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_AL.csv
+2012-09-16 20:47:57,313 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,317 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_SI.csv
+2012-09-16 20:47:57,317 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,320 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_HR.csv
+2012-09-16 20:47:57,321 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,324 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_BA.csv
+2012-09-16 20:47:57,324 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,327 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_ME.csv
+2012-09-16 20:47:57,327 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,330 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_MK.csv
+2012-09-16 20:47:57,330 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,333 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_RS.csv
+2012-09-16 20:47:57,333 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,336 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_CZ.csv
+2012-09-16 20:47:57,336 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,340 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_HU.csv
+2012-09-16 20:47:57,340 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,343 ERROR [org.databene.domain.organization.CompanyNameGenerator] Cannot create legal form generator: Unable to create generator for atomic dataset: RU: . Falling back to US. 
+2012-09-16 20:47:57,345 INFO  [org.databene.domain.organization.CompanyNameGenerator] Cannot create sector generator: No localization found for /org/databene/domain/organization/sector.csv on locale ru_RU. Falling back to US
+2012-09-16 20:47:57,348 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_RO.csv
+2012-09-16 20:47:57,349 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,353 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_BG.csv
+2012-09-16 20:47:57,353 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,358 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_EE.csv
+2012-09-16 20:47:57,358 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,361 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_LT.csv
+2012-09-16 20:47:57,361 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,365 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_LV.csv
+2012-09-16 20:47:57,365 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,368 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_SK.csv
+2012-09-16 20:47:57,368 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,371 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_UA.csv
+2012-09-16 20:47:57,371 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,374 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_IE.csv
+2012-09-16 20:47:57,374 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,392 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_SE.csv
+2012-09-16 20:47:57,393 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,396 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_DK.csv
+2012-09-16 20:47:57,396 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,399 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_NO.csv
+2012-09-16 20:47:57,399 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,402 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_FI.csv
+2012-09-16 20:47:57,403 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,406 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_IS.csv
+2012-09-16 20:47:57,406 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,453 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_IN.csv
+2012-09-16 20:47:57,453 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,471 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_JP.csv
+2012-09-16 20:47:57,471 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,476 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_ID.csv
+2012-09-16 20:47:57,477 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,483 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_MY.csv
+2012-09-16 20:47:57,483 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,489 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,498 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_TH.csv
+2012-09-16 20:47:57,498 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,512 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_CN.csv
+2012-09-16 20:47:57,513 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,518 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_TW.csv
+2012-09-16 20:47:57,519 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,525 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_HK.csv
+2012-09-16 20:47:57,525 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,539 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_KR.csv
+2012-09-16 20:47:57,540 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,546 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_KP.csv
+2012-09-16 20:47:57,546 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,551 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_ZA.csv
+2012-09-16 20:47:57,552 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,558 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_EG.csv
+2012-09-16 20:47:57,558 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,564 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_GH.csv
+2012-09-16 20:47:57,564 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,569 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_KE.csv
+2012-09-16 20:47:57,570 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,576 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_IL.csv
+2012-09-16 20:47:57,577 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,583 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_AF.csv
+2012-09-16 20:47:57,583 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,593 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_IR.csv
+2012-09-16 20:47:57,594 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,597 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_JO.csv
+2012-09-16 20:47:57,597 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,604 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_KZ.csv
+2012-09-16 20:47:57,604 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,608 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_PK.csv
+2012-09-16 20:47:57,608 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,612 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_QA.csv
+2012-09-16 20:47:57,612 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,616 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_SA.csv
+2012-09-16 20:47:57,616 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,619 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_AE.csv
+2012-09-16 20:47:57,619 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,622 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_AU.csv
+2012-09-16 20:47:57,622 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,625 WARN  [org.databene.domain.address.CityManager] File not found: /org/databene/domain/address/city_NZ.csv
+2012-09-16 20:47:57,625 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset world, falling back to US
+2012-09-16 20:47:57,635 ERROR [org.databene.domain.organization.CompanyNameGenerator] Cannot create legal form generator: No samples defined for composite dataset: CH in generator LegalFormGenerator[/org/databene/domain/organization/legalForm_{0}.csv,/org/databene/dataset/region:CH]. Falling back to US. 
+2012-09-16 20:47:57,637 WARN  [org.databene.domain.organization.CompanyNameGenerator] Error initializing location generator for dataset dach, falling back to US
+2012-09-16 20:47:57,700 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(testVariableFromAttribute_refByThis) 2 times with page size 1 in a single thread
+2012-09-16 20:47:57,706 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'testVariableFromAttribute_refByThis' setup in 8 ms (250/s)
+2012-09-16 20:47:57,710 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(testVariableFromAttribute_refByTypeName) 2 times with page size 1 in a single thread
+2012-09-16 20:47:57,717 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'testVariableFromAttribute_refByTypeName' setup in 9 ms (222/s)
+2012-09-16 20:47:57,720 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(xyz) 2 times with page size 1 in a single thread
+2012-09-16 20:47:57,728 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'xyz' setup in 9 ms (222/s)
+2012-09-16 20:47:57,731 WARN  [org.databene.benerator.engine.expression.xml.XMLConsumerExpression] XMLConsumerExpression(<generate count="1" name="e" type="entity"...): No consumers defined for e
+2012-09-16 20:47:57,731 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(e) 
+2012-09-16 20:47:57,731 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 1 data sets from 'e' setup in 1 ms (1000/s)
+2012-09-16 20:47:57,734 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(referer) 
+2012-09-16 20:47:57,740 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'referer' setup in 7 ms (285/s)
+2012-09-16 20:47:57,743 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(testAttributeFromVariable) 2 times with page size 1 in a single thread
+2012-09-16 20:47:57,743 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'testAttributeFromVariable' setup in 1 ms (2000/s)
+2012-09-16 20:47:57,746 WARN  [org.databene.benerator.engine.expression.xml.XMLConsumerExpression] XMLConsumerExpression(<generate count="1" name="e" type="entity"...): No consumers defined for e
+2012-09-16 20:47:57,748 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(e) 
+2012-09-16 20:47:57,748 WARN  [org.databene.benerator.engine.expression.xml.XMLConsumerExpression] XMLConsumerExpression(<generate count="3" name="sub"...): No consumers defined for sub
+2012-09-16 20:47:57,754 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 4 data sets from 'e' setup in 9 ms (444/s)
+2012-09-16 20:47:57,757 WARN  [org.databene.benerator.engine.expression.xml.XMLConsumerExpression] XMLConsumerExpression(<generate count="5"...): No consumers defined for null
+2012-09-16 20:47:57,757 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(null) 5 times with page size 1 in a single thread
+2012-09-16 20:47:57,757 WARN  [org.databene.benerator.engine.expression.xml.XMLConsumerExpression] XMLConsumerExpression(<generate count="3"...): No consumers defined for null
+2012-09-16 20:47:57,758 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 20 data sets from 'anonymous' setup in 2 ms (10000/s)
+2012-09-16 20:47:57,838 WARN  [org.databene.benerator.engine.expression.xml.XMLConsumerExpression] XMLConsumerExpression(<generate count="3" name="perGen" type="Person"...): No consumers defined for perGen
+2012-09-16 20:47:57,866 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:57,943 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:57,943 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:58,156 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(p) 
+2012-09-16 20:47:58,180 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'p' setup in 29 ms (68/s)
+2012-09-16 20:47:58,624 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:58,624 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:58,624 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:58,628 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:58,628 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:58,633 INFO  [org.databene.JDBC] Connected to HSQL Database Engine 1.8.0
+2012-09-16 20:47:58,633 INFO  [org.databene.JDBC] Using driver HSQL Database Engine Driver 1.8.0
+2012-09-16 20:47:58,633 INFO  [org.databene.JDBC] JDBC version 3.0
+2012-09-16 20:47:58,636 INFO  [org.databene.jdbacl.model.jdbc.JDBCDBImporter] Importing tables from ___temp
+2012-09-16 20:47:58,637 INFO  [org.databene.platform.db.DBSystem] Fetching table details and ordering tables by dependency
+2012-09-16 20:47:58,778 ERROR [org.databene.domain.address.StreetNameGenerator] Error initializing StreetNameGenerator with dataset 'AU': Unable to create generator for atomic dataset: AU: . Falling back to 'US'
+2012-09-16 20:47:59,082 INFO  [org.databene.benerator.util.LineShuffler] shuffling org/databene/benerator/util/test.txt and writing to target/LineShufflerTest.txt (max. 3 lines)
+2012-09-16 20:47:59,083 INFO  [org.databene.benerator.util.LineShuffler] saving target/LineShufflerTest.txt...
+2012-09-16 20:47:59,108 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(null) 2 times with page size 1 in a single thread
+2012-09-16 20:47:59,109 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 2 data sets from 'anonymous' setup in 2 ms (1000/s)
+2012-09-16 20:47:59,138 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(entity) 500 times with page size 1 in a single thread
+2012-09-16 20:47:59,146 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 500 data sets from 'entity' setup in 9 ms (55555/s)
+2012-09-16 20:47:59,149 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(entity) 500 times with page size 1 in a single thread
+2012-09-16 20:47:59,156 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 500 data sets from 'entity' setup in 7 ms (71428/s)
+2012-09-16 20:47:59,159 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(entity) 500 times with page size 1 in a single thread
+2012-09-16 20:47:59,165 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 500 data sets from 'entity' setup in 7 ms (71428/s)
+2012-09-16 20:47:59,168 INFO  [org.databene.task.runner.PagedTaskRunner] Running task GenerateAndConsumeTask(entity) 500 times with page size 1 in a single thread
+2012-09-16 20:47:59,172 INFO  [org.databene.benerator.engine.statement.TimedGeneratorStatement] Created 500 data sets from 'entity' setup in 5 ms (100000/s)

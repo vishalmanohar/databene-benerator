@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+   <!-- ================================= -->
+   <!-- Preserve messages in a local file -->
+   <!-- ================================= -->
+
+   <!-- A time/date based rolling appender -->
+   <appender name="FILE" class="org.apache.log4j.RollingFileAppender">
+      <!--errorHandler class="org.jboss.logging.util.OnlyOnceErrorHandler"/-->
+      <param name="File" value="./benerator.log"/>
+      <param name="Append" value="false"/>
+
+      <layout class="org.apache.log4j.PatternLayout">
+         <!-- The default pattern: Date Priority [Category] Message\n -->
+         <param name="ConversionPattern" value="%d %-5p (%t) [%c] %m%n"/>
+
+         <!-- The full pattern: Date MS Priority [Category] (Thread:NDC) Message\n
+         <param name="ConversionPattern" value="%d %-5r %-5p [%c] (%t:%x) %m%n"/>
+          -->
+      </layout>
+
+   </appender>
+
+
+
+   <!-- ============================== -->
+   <!-- Append messages to the console -->
+   <!-- ============================== -->
+
+   <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+      <!--errorHandler class="org.jboss.logging.util.OnlyOnceErrorHandler"/-->
+
+      <param name="Target" value="System.out"/>
+      <param name="Threshold" value="debug"/>
+
+      <layout class="org.apache.log4j.PatternLayout">
+         <!-- The default pattern: Date Priority [Category] Message\n -->
+         <param name="ConversionPattern" value="%d{ABSOLUTE} %-5p (%t) [%c{1}] %m%n"/>
+      </layout>
+   </appender>
+
+   <!-- ================ -->
+   <!-- Limit categories -->
+   <!-- ================ -->
+
+    <category name="org.apache">
+       <priority value="warn"/>
+    </category>
+
+    <category name="shop">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene.CONFIG">
+       <priority value="debug"/>
+    </category>
+
+    <category name="org.databene.COMMENT">
+       <priority value="debug"/>
+    </category>
+
+    <category name="org.databene.SQL">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene.JDBC">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene.benerator">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene.benerator.STATE">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene.commons">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene.dataset">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene.model">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene.platform.db">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene.commons.converter">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene.platform.db.DBSystem">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene.platform.xml">
+       <priority value="info"/>
+    </category>
+
+    <category name="org.databene.domain">
+       <priority value="info"/>
+    </category>
+
+   <!-- ======================= -->
+   <!-- Setup the Root category -->
+   <!-- ======================= -->
+
+    <root>
+        <priority value="info"/>
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+</log4j:configuration>

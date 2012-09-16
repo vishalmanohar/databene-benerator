@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<dataset>
+    <person name="Alice" age="23" />
+    <person name="Otto" age="89" />
+</dataset>

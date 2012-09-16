@@ -1,0 +1,17 @@
+<assembly>
+    <id>backup</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>true</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory></directory>
+            <excludes>
+                <exclude>target/**</exclude>
+                <exclude>.*</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+
+</assembly>
