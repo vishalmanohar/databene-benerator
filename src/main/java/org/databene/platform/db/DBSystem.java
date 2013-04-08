@@ -35,50 +35,25 @@ import org.databene.commons.bean.ArrayPropertyExtractor;
 import org.databene.commons.collection.OrderedNameMap;
 import org.databene.commons.converter.AnyConverter;
 import org.databene.commons.version.VersionNumber;
-import org.databene.jdbacl.ColumnInfo;
-import org.databene.jdbacl.DBUtil;
-import org.databene.jdbacl.DatabaseDialect;
-import org.databene.jdbacl.DatabaseDialectManager;
-import org.databene.jdbacl.JDBCConnectData;
-import org.databene.jdbacl.ResultSetConverter;
+import org.databene.jdbacl.*;
 import org.databene.jdbacl.dialect.OracleDialect;
-import org.databene.jdbacl.model.DBCatalog;
-import org.databene.jdbacl.model.DBColumn;
-import org.databene.jdbacl.model.DBDataType;
-import org.databene.jdbacl.model.DBForeignKeyConstraint;
-import org.databene.jdbacl.model.DBMetaDataImporter;
-import org.databene.jdbacl.model.DBPrimaryKeyConstraint;
-import org.databene.jdbacl.model.DBSchema;
-import org.databene.jdbacl.model.DBTable;
-import org.databene.jdbacl.model.DBUniqueConstraint;
-import org.databene.jdbacl.model.Database;
+import org.databene.jdbacl.model.*;
 import org.databene.jdbacl.model.cache.CachingDBImporter;
 import org.databene.jdbacl.model.jdbc.JDBCDBImporter;
 import org.databene.jdbacl.model.jdbc.JDBCMetaDataUtil;
 import org.databene.model.data.*;
-import org.databene.script.expression.ConstantExpression;
 import org.databene.script.PrimitiveType;
+import org.databene.script.expression.ConstantExpression;
 import org.databene.webdecs.DataSource;
 import org.databene.webdecs.util.ConvertingDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.io.File;
 import java.math.BigDecimal;
-import java.sql.Blob;
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.ResultSet;
-import java.sql.Types;
+import java.sql.*;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * RDBMS implementation of the {@link StorageSystem} interface.<br/>
@@ -709,6 +684,10 @@ public class DBSystem extends AbstractStorageSystem {
             }
             DBDataType columnType = column.getType();
             String type = JdbcMetaTypeMapper.abstractType(columnType, acceptUnknownColumnTypes);
+            if(type == null){
+                LOGGER.debug(String.format("Could not find type. Leaving out column %s", column.getName()));
+                continue;
+            }
             String defaultValue = column.getDefaultValue();
             SimpleTypeDescriptor typeDescriptor = new SimpleTypeDescriptor(columnId, this, type);
             if (defaultValue != null)
