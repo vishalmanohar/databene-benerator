@@ -104,7 +104,7 @@
         <dependency> <!-- TODO which Benerator version should depend on JUnit in which scope? -->
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.9</version>
+            <version>4.13.1</version>
             <!-- NOT in test scope because Benerator provides test helper classes -->
         </dependency>
 
